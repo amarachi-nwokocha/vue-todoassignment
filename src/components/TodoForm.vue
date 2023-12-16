@@ -68,15 +68,9 @@ export default {
         <li
           v-for="todo in myArray"
           :key="todo.id"
-          :class="{ 'line-through': todo.completed }"
           class="flex items-center justify-around py-2"
         >
-          <!-- loop through todo myArray -->
-          <input
-            type="checkbox"
-            class="w-[40px] rounded-full bg-gray-700 outline-none"
-            @click="handleDone(todo)"
-          />
+          
           <p :class="{ completed: todo.completed }" class="text-xl font-semibold capitalize">{{ todo.title }}</p>
           <font-awesome-icon
             icon="trash"
@@ -94,9 +88,5 @@ export default {
   </div>
 </template>
 <style>
-.completed {
-  text-decoration: line-through;
-  color: gray;
-  /* Additional styles for completed todos */
-}
+
 </style>
