@@ -13,7 +13,7 @@
 <script>
 import TodoForm from "./components/TodoForm.vue";
 export default {
-  components: { TodoForm,CreateTodo },
+  components: { TodoForm },
   name: "Todo-App",
   methods: {},
 };
